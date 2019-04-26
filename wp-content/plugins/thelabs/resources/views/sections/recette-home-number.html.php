@@ -1,0 +1,2 @@
+<!-- Je rajoute l'attribut value dans le quel je met la variable que j'ai passé avec mon compact dans ma function render ligne 40-42 dans RecetteHomeNumber.php -->
+<input type="number" name="recette_home_number" id="" value="<?php echo $nbr_recette_home ?>"> 
