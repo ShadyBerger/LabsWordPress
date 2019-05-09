@@ -12,7 +12,7 @@ class CreateMailTable
     // Nous récupérons l'objet $wpdb qui est global afin de pouvoir intéragir avec la base de donnée.
     global $wpdb;
     // $wpdb->prefix permet de récuper le prefix qu'on avait choisis quand on a créer notre base de donnée wordpress la toute première fois qu'on a lancé wp server apres notre wp core download
-    $table_name = $wpdb->prefix . 'rat_mail';
+    $table_name = $wpdb->prefix . 'labs_mail';
     // nous utilisons la méthode query qui nous permet d'écrire une requette en SQL pure
     // Nous verrons plus tard l'écriture mysql en profondeur.
     // Vous pouvez avoir une preview sur comme construire cette requêtte.

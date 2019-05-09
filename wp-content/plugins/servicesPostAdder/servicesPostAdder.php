@@ -1,5 +1,5 @@
 <?php
-
+use App\Http\Controllers\MailController;
 
 /**
  * Plugin Name:     ServicesPostAdder
@@ -18,3 +18,7 @@
 
 require_once('autoload.php');
 require_once('bootstrap.php');
+
+add_action("admin_post_emailLabs", [MailController::class, "send"]);
+
+add_action("admin_post_nopriv_emailLabs", [MailController::class, "send"]);

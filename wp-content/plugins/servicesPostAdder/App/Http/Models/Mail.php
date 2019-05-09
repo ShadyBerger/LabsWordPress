@@ -10,7 +10,7 @@ class Mail
   public $email;
   public $content;
   public $created_at;
-  protected static $table = 'wp_rat_mail';
+  protected static $table = 'wp_labs_mail';
   /**
    * Fonction qui est appelé lors de l'instance d'un objet.
    */
@@ -29,7 +29,7 @@ class Mail
     global $wpdb;
     // nous utilisons à nous la méthode insert de l'objet $wpdb;
     return $wpdb->insert(
-      $wpdb->prefix . 'rat_mail', // le nom de la table
+      $wpdb->prefix . 'labs_mail', // le nom de la table
       // ici nous affichons toutes les colonnes avec leur valeur sous forme d'objet.
       [
         'id' => $this->id,
